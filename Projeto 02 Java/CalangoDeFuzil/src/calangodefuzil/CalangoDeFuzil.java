@@ -5,12 +5,18 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class CalangoDeFuzil{
-    int nBalas = 12;
+    int nBalas;
     int nCabecas;
-    int nPatas = 6;
+    int nPatas;
     int meuTiro;
     int colete;
     Random random = new Random();
+    
+    //Construtor, mesmo nome da classe = sombreamento de variável
+    CalangoDeFuzil(int nBalas, int nPatas){//Parâmetros
+        this.nBalas = nBalas;
+        this.nPatas = nPatas;
+    }
     
     void atirar(){
         this.meuTiro = random.nextInt(4)+1;
@@ -22,11 +28,12 @@ public class CalangoDeFuzil{
         }
         if(nBalas == 0){
             System.out.println("HEY BRO, PRECISO DE BALAS!");
+            return;
         }else{
             nBalas -= 1;
             
             if(meuTiro == 1 || meuTiro == 2){
-                nCabecas += 1;
+                this.nCabecas += 1;
                 System.out.println("WOOW, HEAD SHOT!!");
                 if(this.colete == 1)
                     alvejado();    
@@ -47,7 +54,7 @@ public class CalangoDeFuzil{
         }
     }
     void regenerar(){
-        nPatas = 4;
+        nPatas = 6;
         System.out.println("Agora você já tem todas as patas");
     }
     void alvejado(){
@@ -58,24 +65,28 @@ public class CalangoDeFuzil{
     public String toString(){
         return "BALAS: " + nBalas + "/" + "CABEÇAS: " + nCabecas + "/" + "PATAS: " + nPatas;
     }
-    public static void main(String[] args)
-    {
-        CalangoDeFuzil magaiva = new CalangoDeFuzil();
+    public static void main(String[] args){
+        CalangoDeFuzil magaiva = new CalangoDeFuzil(12, 6);
         Scanner user = new Scanner(System.in);
         
-        for(int i = 0; i < 50; i++){
-            System.out.println("Voce tem " + magaiva.nBalas + " Balas");
-            magaiva.atirar();
-            if(magaiva.nPatas == 2){
+        while(true)
+        {
+            String line = user.nextLine();
+            String[] ui = line.split(" ");
+            
+            if(ui[0].equals("end")){
+                break;
+            }else if(ui[0].equals("atirar")){
                 magaiva.atirar();
-                magaiva.regenerar();
-            }    
-            if(magaiva.nBalas == 0){
-                magaiva.atirar();
+            }else if(ui[0].equals("recarregar")){
                 magaiva.recarregar();
+            }else if(ui[0].equals("regenerar")){
+                magaiva.regenerar();
+            }else if(ui[0].equals("show")){
+                System.out.println(magaiva);
+            }else{
+                System.out.println("Fail: Comando inválido!");
             }
         }
-        System.out.println(magaiva);
-        
     }
 }
