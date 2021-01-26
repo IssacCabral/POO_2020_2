@@ -24,8 +24,18 @@ public class JunkFood
                 Float.parseFloat(tokens[4]));
             }else if(tokens[0].equals("limpar")){
                 maquina.limparEspiral(Integer.parseInt(tokens[1]));
+            }else if(tokens[0].equals("dinheiro")){
+                maquina.inserirDinheiro(Float.parseFloat(tokens[1]));
+            }else if (tokens[0].equals("comprar")){
+                maquina.comprar(Integer.parseInt(tokens[1]));
+            }else if(tokens[0].equals("end")){
+                return;
+            }else if(tokens[0].equals("troco")){
+                maquina.pedirTroco();
+            }else{
+                System.out.println("Fail: comando inválido");
             }
-        
+            
         }
         
         

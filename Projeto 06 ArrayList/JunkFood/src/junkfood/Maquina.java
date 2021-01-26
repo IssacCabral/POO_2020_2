@@ -41,6 +41,7 @@ public class Maquina
     
     public void pedirTroco(){
         if(this.saldoCliente != 0){
+            System.out.println("Você recebeu " + this.saldoCliente + "R$");
             this.saldoCliente = 0;
             return;
         }
@@ -100,7 +101,5 @@ public class Maquina
             System.out.println("voce comprou um "+ esp.get(indice).nome);
         }
         
-    }
-    
-    
+    } 
 }
