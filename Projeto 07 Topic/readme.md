@@ -2,10 +2,12 @@ RELATÓRIO DA SEMANA
 
 *O QUE FEZ:
 
-Fiz o projeto 'Topic' 
+Fiz o projeto 'Topic'
+
 *COM QUEM FEZ:
 
 Fiz sozinho, assistindo a aula referente e me baseando no código do projeto 06 Pula Pula
+
 *COMO FEZ:
 
 O projeto é composto de três classes:

@@ -22,7 +22,7 @@ public class Controller
             }else{
                 System.out.println("Fail: entrada inválida");
             }
-
+            //Minha mãe me ama
         }while(true);
         
     }
