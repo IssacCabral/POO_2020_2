@@ -2,15 +2,15 @@ RELATÓRIO DA SEMANA
 
 *O QUE FEZ:
 
-Fiz o projeto 'Topic'
+    Fiz o projeto 'Topic'
 
 *COM QUEM FEZ:
 
-Fiz sozinho, assistindo a aula referente e me baseando no código do projeto 06 Pula Pula
+    Fiz sozinho, assistindo a aula referente e me baseando no código do projeto 06 Pula Pula
 
 *COMO FEZ:
 
-O projeto é composto de três classes:
+    O projeto é composto de três classes:
     
     *Controller:
         Aqui é minha classe principal onde fica a interação com o usuário
@@ -58,16 +58,16 @@ O projeto é composto de três classes:
 
 *O QUE APRENDEU:
 
-Aprendi mais sobre excessões com nullPointer. Quando se tenta acessar um atributo ou
-método de um objeto referenciado para null é gerado esse erro. Para isso, deve-se verificar
-em um laço. E ir iterando, se o objeto for null, então der um continue. 
+    Aprendi mais sobre excessões com nullPointer. Quando se tenta acessar um atributo ou
+    método de um objeto referenciado para null é gerado esse erro. Para isso, deve-se verificar
+    em um laço. E ir iterando, se o objeto for null, então der um continue. 
 
 *MAIOR DIFICULDADE:
 
-Tive dificuldade no algorítmo que subscreve o toString. E tive dificuldades para criar 
-o métod in(). Pois deve-se verificar a idade, e colocar cada passageiro na sua fila respectiva.
+    Tive dificuldade no algorítmo que subscreve o toString. E tive dificuldades para criar 
+    o métod in(). Pois deve-se verificar a idade, e colocar cada passageiro na sua fila respectiva.
 
 *QUANTO TEMPO LEVOU:
 
-Levei cerca de três a quatro horas. Pois tive que para várias vezes para numa solução 
-quando via um certo problema
+    Levei cerca de três a quatro horas. Pois tive que para várias vezes para numa solução 
+    quando via um certo problema
