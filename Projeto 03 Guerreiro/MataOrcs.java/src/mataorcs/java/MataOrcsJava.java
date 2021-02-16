@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MataOrcsJava 
 {
     public static void main(String[] args) {
-        Guerreiro magaiva = new Guerreiro("Magaiva", 100, 5);
+        Guerreiro magaiva = new Guerreiro("Pepeu", 100, 5);
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("\n++++++ BEM VINDO AO MATA ORCS ++++++\n");
