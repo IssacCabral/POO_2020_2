@@ -2,9 +2,12 @@ package Models;
 
 public class Fone 
 {
+    //Atributos
     private String label;
     private String number;
 
+
+    //Métodos
     public static boolean validate(String number){
         String validos = "0123456789()-";
         for(int i = 0; i < number.length(); i++){
