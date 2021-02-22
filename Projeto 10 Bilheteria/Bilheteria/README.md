@@ -28,12 +28,30 @@ RELATÓRIO DA SEMANA
         essa classe possui principalmente um método para adicionar setores. Não permitindo
         colocar outro que já exista.
 
-    *Venda
+    *Venda:
         -Possui como atributo objetos do tipo pessoa, evento e setor. e um double valor.
 
         essa classe serve para eu adicionar em um arraylist de vendas na classe bilheteria
         para controlar o registro de vendas a partir de lá.
 
+    *Bilheteria:
+        -Possui como atributo um mapa de pessoas, um mapa de eventos e um arraylist de vendas
+        -Possui também um double caixa. Para armazenar o saldo das vendas.
+
+        Essa classe serve para 
+            - adicionar um pessoa
+            - mostrar essas pessoas
+            - adicionar um evento
+            - mostrar os eventos
+            - realizar uma venda
+            - mostrar as vendas
+            - adicionar um setor
+        É por ela que é controlado todo o resto do programa
+
+    *App:
+        - Essa classe é onde fica a interação com o usuário
+        - É onde instancio minha Bilheteria e partir dela, faço todas as interações.
+            
 
 *O QUE APRENDEU:
 
